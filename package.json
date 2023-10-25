@@ -1,0 +1,22 @@
+{
+  "name": "botanica-jardim",
+  "version": "1.0.0",
+  "description": "Reposito de um site para estudo de tecnologia de desenvolvimento web e web desing, baseado na ideia de um site de botânica, para exibição de plantas e abstração desta estética natural",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"main\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MAIA332/Botanica-jardim.git"
+  },
+  "author": "Lukas Maia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MAIA332/Botanica-jardim/issues"
+  },
+  "homepage": "https://github.com/MAIA332/Botanica-jardim#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
