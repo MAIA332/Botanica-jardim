@@ -1,5 +1,7 @@
 @import 'default';
+@import 'responsive';
 
-body{
-    background-color: $background-color;
+
+.section{
+    @include section;
 }
