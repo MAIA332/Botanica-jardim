@@ -10,7 +10,8 @@ $font-family: 'Roboto', sans-serif;
 $font-family-secondary: 'Ubuntu', sans-serif;
 
 // -- values
-$section-heigh:900px;
+$section-heigh:1000px;
+$full-page-section-heigh:650px;
 
 
 *{
@@ -18,7 +19,7 @@ $section-heigh:900px;
     padding: 0;
 }
 
-h1, h2, h3{
+h1, h2, h3,p,b,span,a{
     color: $default-letter;
     font-family: $font-family;
 }
@@ -36,12 +37,8 @@ body{
     }
 
     @include breakpoint(medium) { 
-        height: 600px
+        height: $full-page-section-heigh;
     }
-    
-    @include breakpoint(large) { 
-        width: 500px; 
-    } 
     
 }
 
