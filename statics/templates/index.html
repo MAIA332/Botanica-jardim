@@ -7,12 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Botanic Thoughts | Home</title>
+    
 </head>
 <body>
     <!--<h1>HELLO WORLD</h1>-->
-    <div class="section">
-        <h1>HELLO WORLD</h1>
+    <div class="section banner">
+        <div id="nav"></div>
+        
+        <div class="banner-glass">
+            <div class="banner-image">
+                <!-- <img src="../images/FUNDO-RECORTADO-reduzida-kraken-removebg-preview.png"> -->
+            </div>
+            <h1>Hello World</h1>
+            
+        </div>
     </div>
     <div class="section">
         <h1>HELLO WORLD</h1>
@@ -22,3 +31,12 @@
     </div>
 </body>
 </html>
+<script>
+    const nav = document.getElementById('nav');
+
+    fetch('./menu.html')
+    .then(res=>res.text())
+    .then(data=>{
+        nav.innerHTML =data
+    })
+</script>

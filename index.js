@@ -4,7 +4,8 @@ const templates = "statics/templates/"
 
 var app = express();
 
-app.use(express.static('statics'));
+app.set('view engine', 'ejs')
+app.use(express.static('statics/'));
 
 
 app.get('/', function(req, res) {
