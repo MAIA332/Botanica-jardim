@@ -31,12 +31,29 @@
     }
 
     h1{
-        font-size: 3.2em;
+        font-size:$title-size;
         cursor: default;
+    }
+
+    @include breakpoint(small) { 
+        margin: 10% 0 0 0;
+    }
+
+    @include breakpoint(medium) { 
+        margin: 5% 0 0 0;
     }
 
 }
 
 nav{
     @include horizontal-list;
+    @include menu;
+}
+
+.banner-image{
+    border: 1px solid red;
+    height: 800px;
+    width: 50%;
+    margin: 15% 0 0 2%;
+    font-size: $subtitle-size;
 }

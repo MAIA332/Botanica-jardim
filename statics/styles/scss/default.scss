@@ -1,6 +1,7 @@
 @import 'responsive';
 
 // -- colors
+$base-green:rgb(3, 255, 3);
 $background-color: #333;
 $default-letter: #e9e9e9;
 $base-red:#b40000;
@@ -11,10 +12,12 @@ $main-theme-glass: #121f169c;
 // -- fotns
 $font-family: 'Roboto', sans-serif;
 $font-family-secondary: 'Ubuntu', sans-serif;
+$title-size: 3.2em;
+$subtitle-size:2.3em;
 
 // -- values
 $section-heigh:1000px;
-$full-page-section-heigh:650px;
+$full-page-section-heigh:950px;
 $glass-default-heigh: 450px;
 $glass-responsive-heigh: 800px; 
 
@@ -78,3 +81,19 @@ body{
       }
     }
   }
+
+@mixin menu{
+    a{
+        text-decoration: none;
+        font-size: 1.3em;
+    }
+
+    li{
+        margin: 2% 0 0 7%;
+        transition: 0.5s;
+
+        &:hover{
+            border-bottom: 1px solid $base-green;
+        }
+    }
+}

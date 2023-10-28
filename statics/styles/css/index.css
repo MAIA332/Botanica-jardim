@@ -1,32 +1,40 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 h1, h2, h3, p, b, span, a {
   color: #e9e9e9;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+}
 
 body {
-  background-color: #333; }
+  background-color: #333;
+}
 
 @media (max-width: 799px) {
   .section {
-    height: 1000px; } }
+    height: 1000px;
+  }
+}
 @media (min-width: 800px) {
   .section {
-    height: 650px; } }
+    height: 950px;
+  }
+}
 
 .banner {
   background-image: url("https://images.unsplash.com/photo-1505807557511-bc38492556a6?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+}
 
 .banner-glass {
   background-color: rgba(231, 231, 231, 0.116);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(2px);
-  background-color: #121f169c;
+  background-color: rgba(18, 31, 22, 0.6117647059);
   border-radius: 50px 0px 0px 50px;
   margin: 10% 0 0 0;
   width: 40%;
@@ -34,26 +42,64 @@ body {
   transition: 0.5s;
   display: flex;
   justify-content: center;
-  align-items: center; }
-  @media (max-width: 799px) {
-    .banner-glass {
-      height: 800px; } }
-  @media (min-width: 800px) {
-    .banner-glass {
-      height: 450px; } }
-  .banner-glass:hover {
-    width: 43%; }
-  .banner-glass h1 {
-    font-size: 3.2em;
-    cursor: default; }
+  align-items: center;
+}
+@media (max-width: 799px) {
+  .banner-glass {
+    height: 800px;
+  }
+}
+@media (min-width: 800px) {
+  .banner-glass {
+    height: 450px;
+  }
+}
+.banner-glass:hover {
+  width: 43%;
+}
+.banner-glass h1 {
+  font-size: 3.2em;
+  cursor: default;
+}
+@media (max-width: 799px) {
+  .banner-glass {
+    margin: 10% 0 0 0;
+  }
+}
+@media (min-width: 800px) {
+  .banner-glass {
+    margin: 5% 0 0 0;
+  }
+}
 
 nav {
   margin: 0;
   padding: 0;
-  list-style: none; }
-  nav li {
-    display: inline-block;
-    margin-left: -2px;
-    margin-right: 2em; }
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin-left: -2px;
+  margin-right: 2em;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.3em;
+}
+nav li {
+  margin: 2% 0 0 7%;
+  transition: 0.5s;
+}
+nav li:hover {
+  border-bottom: 1px solid rgb(3, 255, 3);
+}
+
+.banner-image {
+  border: 1px solid red;
+  height: 800px;
+  width: 50%;
+  margin: 15% 0 0 2%;
+  font-size: 2.3em;
+}
 
 /*# sourceMappingURL=index.css.map */

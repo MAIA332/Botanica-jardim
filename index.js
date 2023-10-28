@@ -9,7 +9,7 @@ app.use(express.static('statics/'));
 
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, templates+'index.html'));
+    res.render(path.join(__dirname, templates+'index'));
 });
 
 app.listen(3000, function () {
