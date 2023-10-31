@@ -6,6 +6,24 @@
     @include section;
 }
 
+.section2{
+    background-image: url("https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?auto=format&fit=crop&q=80&w=1471&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .left{
+        margin: 0 0 0 0;
+        background-color: $secondary-theme-glass;
+        width: 50%;
+        height: 950px;
+
+        iframe{
+            margin: 0 0 0 5%;
+        }
+    }
+}
+
 .banner{
     background-image: url('https://images.unsplash.com/photo-1505807557511-bc38492556a6?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
@@ -43,6 +61,26 @@
         margin: 5% 0 0 0;
     }
 
+    .hover-letter{
+        animation-name: change;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    .container{
+        margin: 0% 0 0 2%;
+        height: 60px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .element{
+        margin: 0 5% 0 0;
+        animation-name: opacity;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
 }
 
 nav{
@@ -51,9 +89,45 @@ nav{
 }
 
 .banner-image{
-    border: 1px solid red;
-    height: 800px;
+    background-color: transparent/* $secondary-green */;
+    height: 500px;
     width: 50%;
-    margin: 15% 0 0 2%;
+    margin: 5% 0 0 2%;
     font-size: $subtitle-size;
+
+    .desc{
+        margin: 30% 0 0 15%;
+        h3{
+            cursor: default;
+        }
+    }
+
+    button{
+        width: 25%;
+        height: 50px;
+        margin: 5% 0 0 20%;
+        background-color: transparent;
+        border: 1px solid $default-letter;
+        border-radius: 10px;
+        transition: 0.5s;
+        cursor: pointer;
+
+        a{
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        &:hover{
+            width: 30%;
+        }
+    }
 }
+
+footer{
+    @include rodape;
+    height: 200px;
+}
+/* 
+.banner-image img{
+    width: 70%;
+} */
