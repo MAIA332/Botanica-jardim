@@ -40,3 +40,9 @@ inicializacao.bat
 ```
 inicializacao.sh
 ```
+
+## Design:
+
+### Home page:
+
+![image](statics/images/readme/mainpageexib.gif)
