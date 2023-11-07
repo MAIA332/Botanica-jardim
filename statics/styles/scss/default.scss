@@ -121,3 +121,12 @@ body{
     66.64%,79.3% {transform:translate3d(0,-200%,0);}
     83.3%,95.96% {transform:translate3d(0,-100%,0);}
 }
+
+@mixin carrousel{
+    img{
+        width: 100%;
+    }
+    .container{
+        margin: 25% 0 0 0;
+    }
+}
