@@ -11,6 +11,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    $base-heigh:450px;
+    display: flex;
 
     .left{
         margin: 0 0 0 0;
@@ -20,6 +22,26 @@
 
         iframe{
             margin: 0 0 0 5%;
+        }
+
+        .top{
+            border: 1px solid red;
+            height:$base-heigh;
+        }
+        .bottom{
+            border: 1px solid red;
+            height: $base-heigh;
+        }
+    }
+
+    .right{
+        border: 1px solid red;
+        margin: 0 0 0 0;
+        width: 50%;
+        height: 950px;
+
+        .car{
+            @include carrousel;
         }
     }
 }
@@ -120,8 +142,13 @@ nav{
         &:hover{
             width: 30%;
         }
+
+        @include breakpoint(medium) { 
+            margin: 5% 0 0 10%;
+        }
     }
 }
+
 
 footer{
     @include rodape;
