@@ -29,19 +29,24 @@
             height:$base-heigh;
         }
         .bottom{
-            border: 1px solid red;
             height: $base-heigh;
+
+            .card-text{
+                background-color: $default-glass;
+                height: 102%;
+                border-radius: 20% 20% 10% 10%;
+            }
         }
     }
 
     .right{
-        border: 1px solid red;
         margin: 0 0 0 0;
         width: 50%;
         height: 950px;
 
         .car{
             @include carrousel;
+
         }
     }
 }

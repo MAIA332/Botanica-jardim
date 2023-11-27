@@ -125,8 +125,20 @@ body{
 @mixin carrousel{
     img{
         width: 100%;
+        animation-name: carrousel_animation;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
     }
     .container{
-        margin: 25% 0 0 0;
+        overflow-x: hidden;
+        display: flex;
     }
+}
+
+@keyframes carrousel_animation {
+    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+    16.66%, 29.32% {transform:translate3d(-100%,0,0);}
+    33.32%,45.98% {transform:translate3d(-200%,0,0);}
+    49.98%,62.64% {transform:translate3d(-303%,0,0);}
+    66.64%,79.3% {transform:translate3d(-400%,0,0);}
 }
