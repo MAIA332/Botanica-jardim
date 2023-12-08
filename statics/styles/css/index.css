@@ -87,7 +87,7 @@ body {
     .section2 .right .car img {
       width: 100%;
       animation-name: carrousel_animation;
-      animation-duration: 10s;
+      animation-duration: 20s;
       animation-iteration-count: infinite; }
     .section2 .right .car .container {
       overflow-x: hidden;
