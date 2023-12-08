@@ -75,6 +75,8 @@ body {
       height: 850px;
       width: 30%;
       margin-left: 2%; }
+      .section2 .left .images .item {
+        margin-top: 15%; }
       .section2 .left .images img {
         width: 100%;
         margin-top: 5%; }

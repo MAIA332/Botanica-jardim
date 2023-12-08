@@ -45,8 +45,12 @@
             width: 30%;
             margin-left: 2%;
 
+            :last-child{
+                margin-top: 35%;
+            }
+
             .item{
-                margin-top: 15%;
+                margin-top: 10%;
             }
 
             img{
