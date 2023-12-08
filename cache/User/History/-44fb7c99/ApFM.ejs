@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Botanic Thoughts | Home</title>
+    
+</head>
+<body>
+    <!--<h1>HELLO WORLD</h1>-->
+
+    <div class="section banner">
+        <div id="nav">
+            <%- include('menu') %>
+        </div>
+        
+        <div class="banner-glass">
+            <h1 class="element">[</h1>
+            
+            <h1 class="banner-glass-title">Botanic </h1><br><br>
+            
+            <div class="container">
+                <h1 class="hover-letter">Thoughts</h1>
+                <h1 class="hover-letter">Minds</h1>
+                <h1 class="hover-letter">Concepts</h1>
+                <h1 class="hover-letter">Art</h1>
+            </div>
+            
+        </div>
+        <div class="banner-image">
+            
+           <!--  <img src="../images/plan.png"> -->
+            <div class="desc">
+                <h3>The call of the forest</h3>
+                <button><a href="" target="_blank">Ver mais</a></button>
+            </div>
+           
+        </div>
+    </div>
+    <div class="section section2" id="aboutus">
+        <div class="left">
+            <svg width="200" height="950">
+                <line x1="50" y1="50" x2="50" y2="850" class="my-line"></line>
+                <line x1="50" y1="50" x2="100" y2="100" class="my-line2" stroke-dasharray="5"></line>
+                <circle cx="50" cy="50" r="7" class="circle-top"></circle>
+                <circle cx="50" cy="400" r="6" class="circle-middle"></circle>
+                <circle cx="50" cy="800" r="6" class="circle-end"></circle>
+            </svg>
+        </div> 
+        <div class="right">
+            <div class="car">
+                <%- include('carrousel') %>
+            </div>
+        </div>   
+    </div>
+    <div class="section section3" id="contact">
+        <h1>HELLO WORLD</h1>
+    </div>
+    <footer>
+        <%- include('footer') %>
+    </footer>
+</body>
+</html>

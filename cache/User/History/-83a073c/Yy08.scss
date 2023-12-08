@@ -1,0 +1,145 @@
+@import 'responsive';
+
+// -- colors
+$base-green:rgb(3, 255, 3);
+$base-black:#0c0c0c;
+$secondary-green:#121f16;
+$background-color: #333;
+$stroke-color:rgb(97, 97, 97);
+$default-letter: #e9e9e9;
+$base-red:#b40000;
+$default-glass:rgba(231, 231, 231, 0.116);
+$box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$main-theme-glass: #121f169c;
+$secondary-theme-glass:#121f16da;
+
+// -- fotns
+$font-family: 'Roboto', sans-serif;
+$font-family-secondary: 'Ubuntu', sans-serif;
+$title-size: 3.2em;
+$subtitle-size:2.3em;
+
+// -- values
+$section-heigh:1000px;
+$full-page-section-heigh:950px;
+$glass-default-heigh: 450px;
+$glass-responsive-heigh: 800px; 
+
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3,p,b,span,a{
+    color: $default-letter;
+    font-family: $font-family;
+}
+
+body{
+    background-color: $background-color;
+    scroll-behavior: smooth;
+}
+
+@mixin glass{
+    background-color: $default-glass;
+    box-shadow: $box-shadow;
+    backdrop-filter: blur(2px);
+
+    @include breakpoint(small) { 
+        height: $glass-responsive-heigh;
+    }
+
+    @include breakpoint(medium) { 
+        height: $glass-default-heigh;
+    }
+}
+
+@mixin section{
+
+    //border: 1px solid $base-red;
+
+    @include breakpoint(small) { 
+        height: $section-heigh;
+    }
+
+    @include breakpoint(medium) { 
+        height: $full-page-section-heigh;
+    }
+    
+}
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin horizontal-list {
+    @include reset-list;
+  
+    li {
+      display: inline-block;
+      margin: {
+        left: -2px;
+        right: 2em;
+      }
+    }
+  }
+
+@mixin menu{
+    a{
+        text-decoration: none;
+        font-size: 1.3em;
+        transition: 0.5s;
+
+        &:hover{
+           color: $base-green;
+        }
+    }
+
+    li{
+        margin: 2% 0 0 7%;
+
+    }
+}
+
+@mixin rodape{
+    background-color:$base-black;
+}
+
+@keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+}
+  
+@keyframes change {
+    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+    16.66%, 29.32% {transform:translate3d(0,-100%,0);}
+    33.32%,45.98% {transform:translate3d(0,-200%,0);}
+    49.98%,62.64% {transform:translate3d(0,-303%,0);}
+    66.64%,79.3% {transform:translate3d(0,-200%,0);}
+    83.3%,95.96% {transform:translate3d(0,-100%,0);}
+}
+
+@mixin carrousel{
+    img{
+        width: 100%;
+        animation-name: carrousel_animation;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    .container{
+        overflow-x: hidden;
+        display: flex;
+    }
+}
+
+@keyframes carrousel_animation {
+    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+    16.66%, 29.32% {transform:translate3d(-100%,0,0);}
+    33.32%,45.98% {transform:translate3d(-200%,0,0);}
+    49.98%,62.64% {transform:translate3d(-303%,0,0);}
+    66.64%,79.3% {transform:translate3d(-400%,0,0);}
+}
